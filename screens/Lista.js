@@ -1,6 +1,6 @@
 import {View,Text,Button,flatList, FlatList} from "react-native";
-import { useAppDatos } from "../context/Datos";
-import Card from "../components/Card"
+import { useAppDatos } from "../context/Datos.js";
+import Card from "../components/Card.js"
 
 export default function Lista ({navigation}){
     const {datos,cargando,borrar} = useAppDatos();
