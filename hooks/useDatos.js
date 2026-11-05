@@ -4,7 +4,7 @@ import {consultar,guardar,eliminar} from "../services/api"
 
 export default function useDatos () {
     const [datos, setDatos]=useState([
-        {id:"1",nombre : "Ejemplo",descripcion :"Registro local",categoria "General"}
+        {id:"1",nombre : "Ejemplo",descripcion :"Registro local",categoria :"General"}
     ]);
 
     const [cargando,setCargando]= useState (CONFIG.usarAPI);
@@ -16,7 +16,7 @@ export default function useDatos () {
         } catch (e){
             console.log (e);
         }finally{
-            set cargando (false);
+            setCargando (false);
         }
     }
     useEffect(()=> {

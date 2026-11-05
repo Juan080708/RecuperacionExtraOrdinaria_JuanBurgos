@@ -12,7 +12,7 @@ export default function Formulario ({navigation}){
         }
         try {
             await agregar (form);
-            navigation.goBack(;)
+            navigation.goBack()
          }catch{
             Alert.alert ("Error","No se guardo")
          }
@@ -20,7 +20,7 @@ export default function Formulario ({navigation}){
     return (
         <View style = {{padding: 20}}>
             <CONFIG.campos.map (c => (
-                <textInput
+                <TextInput
                 key={c}
                 placeHolder = {c}
                 Value = {form[c]||""}

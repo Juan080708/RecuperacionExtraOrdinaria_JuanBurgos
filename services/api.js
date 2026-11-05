@@ -1,6 +1,6 @@
 import {CONFIG} from "../config"
 
-export asyn function consultar (){
+export async function consultar (){
     const r = await fetch (CONFIG.api);
     if (!r.ok) throw new Error ("Error");
     return r.json();
